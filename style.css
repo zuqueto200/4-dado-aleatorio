@@ -1,0 +1,184 @@
+body {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: rgb(32, 32, 32);
+    text-align: center;
+}
+
+header {
+
+    background: rgb(51, 10, 105);
+
+}
+
+.titulo {
+    margin: 0;
+    padding: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.area_central {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dado {
+
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: chartreuse;
+    border-radius: 50px;
+    border: rgb(161, 0, 182) solid 15px;
+}
+
+.valor_total {
+    margin: 0 0 20px 0;
+    color: rgb(36, 255, 7);
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.caixa_ultimos_resultados {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(31, 30, 30);
+
+}
+
+.ultimos_resultados_texto {
+    margin: 0;
+    margin-top: 10px;
+
+
+    font-size: 12px;
+    color: rgb(97, 97, 97);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.ultimos_sorteados_img_individual {
+    display: inline-block;
+    margin-right: -10px;
+    width: 45px;
+    height: 45px;
+    opacity: 0.5;
+}
+
+.escolher {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.varios1, .varios2, .varios3, .varios4, .varios5, .varios6 {
+
+    border-radius: 30%;
+    width: 45px;
+    height: 45px;
+    margin: 10px 5px;
+    background: yellow;
+    border: solid 1px;
+}
+
+.mult {
+
+    margin: 0;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.grupo_aposta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grupo_aposta_linha2 {
+
+    margin-top: 50px;
+
+
+}
+
+.campo_valor_aposta {
+
+    font-size: 15px;
+    width: 60px;
+    height: 28px;
+    margin: 0 3px 0 3px;
+    border: rgb(212, 223, 210) solid 1px;
+    color: rgb(194, 224, 253);
+    font-weight: 400;
+    background-color: rgb(73, 63, 63);
+}
+
+.bt_des {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    height: 26px;
+    padding: 15px 15px;
+    margin: 0 3px 0 3px;
+    background: rgb(56, 80, 31);
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+
+}
+
+.bt_des:hover {
+    background-color: lime;
+    color: black;
+}
+
+
+.campo_valor_aposta::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.centralizar_barra {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    height: 20px;
+    background-color: rgb(224, 26, 26);
+    border-radius: 20px 20px 20px 20px;
+
+}
+
+.bar {
+
+    position: absolute;
+    height: 100%;
+    background-color: #0fd439;
+    border-radius: 20px 20px 20px 20px;
+
+
+    animation: progress-animation 10s linear infinite;
+}
+
+@keyframes progress-animation {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%
+    }
+}

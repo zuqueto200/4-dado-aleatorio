@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aleatorio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo">JOGO DO DADO</h1>
+    </header>
+    <div class="area_central">
+        <img class="dado" src="img/dado1.png" id="dado_tela">
+    </div>
+    </div>
+    <h2 class="valor_total" id="valor_total">Adicionando Credito...</h2>
+    <div class="centralizar_barra">
+        <div class="container">
+            <div id="barbar" class="bar"></div>
+        </div>
+    </div>
+    <p class="ultimos_resultados_texto">Ultimos Resultados > </p>
+    <div class="caixa_ultimos_resultados">
+        <img class="ultimos_sorteados_img_individual" id="posicao1" src="img/vazio.png">
+        <img class="ultimos_sorteados_img_individual" id="posicao2" src="img/vazio.png">
+        <img class="ultimos_sorteados_img_individual" id="posicao3" src="img/vazio.png">
+        <img class="ultimos_sorteados_img_individual" id="posicao4" src="img/vazio.png">
+        <img class="ultimos_sorteados_img_individual" id="posicao5" src="img/vazio.png">
+        <img class="ultimos_sorteados_img_individual" id="posicao6" src="img/vazio.png">
+        <img class="ultimos_sorteados_img_individual" id="posicao7" src="img/vazio.png">
+        <img class="ultimos_sorteados_img_individual" id="posicao8" src="img/vazio.png">
+        <img class="ultimos_sorteados_img_individual" id="posicao9" src="img/vazio.png">
+        <img class="ultimos_sorteados_img_individual" id="posicao10" src="img/vazio.png">
+        <img class="ultimos_sorteados_img_individual" id="posicao11" src="img/vazio.png">
+        <img class="ultimos_sorteados_img_individual" id="posicao12" src="img/vazio.png">
+    </div>
+    <div class="escolher">
+        <img class="varios1" id="varios1" src="img/dado1.png" onclick="selecionado1()">
+        <img class="varios2" id="varios2" src="img/dado2.png" onclick="selecionado2()">
+        <img class="varios3" id="varios3" src="img/dado3.png" onclick="selecionado3()">
+        <img class="varios4" id="varios4" src="img/dado4.png" onclick="selecionado4()">
+        <img class="varios5" id="varios5" src="img/dado5.png" onclick="selecionado5()">
+        <img class="varios6" id="varios6" src="img/dado6.png" onclick="selecionado6()">
+    </div>
+    <p class="mult"> X5</p>
+    <div class="grupo_aposta">
+        <input class="campo_valor_aposta" id="campo_valor_aposta" type="number" pattern="^[0-9]" min="1" step="1">
+        <button class="bt_des" id="limpar" onclick="limpar()">Limpar</button>
+    </div>
+    <div class="grupo_aposta_linha2">
+        <button class="bt_des" id="maisum" onclick="maisum()">+1</button>
+        <button class="bt_des" id="maiscinco" onclick="maiscinco()">+5</button>
+        <button class="bt_des" id="maisdez" onclick="maisdez()">+10</button>
+        <button class="bt_des" id="vezesdois" onclick="vezesdois()">X2</button>
+        <button class="bt_des" id="dividedois" onclick="dividedois()">1/2</button>
+        <button class="bt_des" id="max" onclick="max()">Max</button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <script src="script.js"></script>
+</body>
+
+</html>
